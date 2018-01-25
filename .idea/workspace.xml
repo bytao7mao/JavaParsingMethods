@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43ec1576-5570-48f7-aa3b-1efd6309a1fa" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/DOMparser.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/DataProvider/.idea/workspace.xml" afterPath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/DataProvider/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SAXCustomerHandler.java" afterPath="$PROJECT_DIR$/src/com/company/SAXCustomerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SAXread.java" afterPath="$PROJECT_DIR$/src/com/company/SAXread.java" />
-    </list>
+    <list default="true" id="43ec1576-5570-48f7-aa3b-1efd6309a1fa" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +25,8 @@
       <file leaf-file-name="DOMparser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DOMparser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="598">
+              <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -679,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DOMparser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="598">
+          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
