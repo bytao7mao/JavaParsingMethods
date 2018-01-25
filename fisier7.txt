@@ -1,0 +1,8 @@
+Root element :class----------------------------
+Current Element :studentStudent roll no : 393
+First Name : dinkarLast Name : kadNick Name : dinkarMarks : 85
+Current Element :studentStudent roll no : 493
+First Name : VaneetLast Name : GuptaNick Name : vinniMarks : 95
+Current Element :studentStudent roll no : 593
+First Name : jasvirLast Name : singnNick Name : jazzMarks : 90
+Total number of nodes: 3

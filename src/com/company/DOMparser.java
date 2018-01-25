@@ -13,7 +13,6 @@ public class DOMparser {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-
         try {
             System.out.println("What would you like the " +
                     "file to be called?");
@@ -27,11 +26,11 @@ public class DOMparser {
             PrintWriter fisier = new PrintWriter(numeFisier);
             String continutFisier = "";
 
-
             File inputFile = new File("C:\\Users\\Mariu\\Desktop\\ManipulateXML\\data\\cust.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 //            dbFactory.setIgnoringComments(true);
 //            dbFactory.setIgnoringElementContentWhitespace(true);
+//            dbFactory.setValidating(true);
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
@@ -49,7 +48,7 @@ public class DOMparser {
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
                     continutFisier+="Student roll no : "
-                            + eElement.getAttribute("rollno");
+                            + eElement.getAttribute("rollno") + "\n";
 
 
                     continutFisier+="First Name : "
@@ -80,6 +79,7 @@ public class DOMparser {
                             .getTextContent();
                 }
             }
+            continutFisier+="\nTotal number of nodes: " + nList.getLength();
             fisier.print(continutFisier);
             fisier.close();
         } catch (Exception e) {
