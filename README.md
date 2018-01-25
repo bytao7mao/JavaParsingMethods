@@ -2,4 +2,9 @@
 # JavaParsingMethods
 
 The DOM method for parsing XML data, can be run with cmd prompt (image below)
+I will describe it in 3 simple steps:
+1.user is asked for file name
+2.filename with .txt type will be generated
+3.output from XML source will be generated in the txt file
+
 <br><img align="top" width="500" src="runwithcmd/parsing.jpg" alt="http://goodtoknow.media.ipcdigital.co.uk" />
