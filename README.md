@@ -8,7 +8,7 @@ I will describe it in 3 simple steps:<br />
 3.output from XML source will be generated in the txt file<br />
 
 <br><img align="top" width="500" src="runwithcmd/parsing.jpg" alt="cmd picture" />
+<br>
 
 ### The GUI method (work in progress)
-<br>
-<br><img align="top" width="500" src="resources/gui.jpg" alt="cmd picture" />
+<br><img align="left" width="400" src="resources/gui.jpg" alt="cmd picture" />
