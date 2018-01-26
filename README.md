@@ -7,4 +7,6 @@ I will describe it in 3 simple steps:<br />
 2.filename with .txt type will be generated<br />
 3.output from XML source will be generated in the txt file<br />
 
-<br><img align="top" width="500" src="runwithcmd/parsing.jpg" alt="http://goodtoknow.media.ipcdigital.co.uk" />
+<br><img align="top" width="500" src="runwithcmd/parsing.jpg" alt="cmd picture" />
+<br>
+<br><img align="top" width="500" src="resources/gui.jpg" alt="cmd picture" />
