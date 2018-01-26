@@ -26,13 +26,21 @@ public class DOMparser {
             PrintWriter fisier = new PrintWriter(numeFisier);
             String continutFisier = "";
 
-            File inputFile = new File("C:\\Users\\Mariu\\Desktop\\ManipulateXML\\data\\cust.xml");
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-//            dbFactory.setIgnoringComments(true);
-//            dbFactory.setIgnoringElementContentWhitespace(true);
-//            dbFactory.setValidating(true);
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(inputFile);
+            File xmlFile = new File("C:\\Users\\Mariu\\Desktop\\ManipulateXML\\data\\cust.xml");
+
+
+
+
+
+            DocumentBuilder builder =
+                    DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            
+//            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//            factory.setIgnoringComments(true);
+//            factory.setIgnoringElementContentWhitespace(true);
+//            factory.setValidating(true);
+//            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document doc = builder.parse(xmlFile);
             doc.getDocumentElement().normalize();
 
             continutFisier+="Root element :" + doc.getDocumentElement().getNodeName();
@@ -47,32 +55,32 @@ public class DOMparser {
                 //checking if type is element
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
-                    continutFisier+="Student roll no : "
+                    continutFisier+=" - Student roll no : "
                             + eElement.getAttribute("rollno") + "\n";
 
 
-                    continutFisier+="First Name : "
+                    continutFisier+="FirstName: "
                             + eElement
                             .getElementsByTagName("firstname")
                             .item(0)
                             .getTextContent();
 
 
-                    continutFisier+="Last Name : "
+                    continutFisier+=" LastName: "
                             + eElement
                             .getElementsByTagName("lastname")
                             .item(0)
                             .getTextContent();
 
 
-                    continutFisier+="Nick Name : "
+                    continutFisier+=" Nickname: "
                             + eElement
                             .getElementsByTagName("nickname")
                             .item(0)
                             .getTextContent();
 
 
-                    continutFisier+="Marks : "
+                    continutFisier+="Marks: "
                             + eElement
                             .getElementsByTagName("marks")
                             .item(0)
