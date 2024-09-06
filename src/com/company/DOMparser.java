@@ -17,7 +17,7 @@ public class DOMparser {
                 System.out.println("What would you like the " +
                         "file to be called?");
                 String numeFisier = sc.nextLine();
-                if (numeFisier == "") {
+                if (numeFisier.equals("")) {
                     numeFisier = numeFisier + "fisierRandom";
                 }
                 if (!numeFisier.contains(".txt")) {
@@ -26,7 +26,7 @@ public class DOMparser {
                 PrintWriter fisier = new PrintWriter(numeFisier);
                 String continutFisier = "";
 
-                File xmlFile = new File("C:\\Users\\Mariu\\Desktop\\ManipulateXML\\data\\cust.xml");
+                File xmlFile = new File("C:\\Users\\tao\\Desktop\\JAVA\\ManipulateXML\\data\\cust.xml");
 
                 DocumentBuilder builder =
                         DocumentBuilderFactory.newInstance().newDocumentBuilder();
@@ -38,7 +38,8 @@ public class DOMparser {
                 Document doc = builder.parse(xmlFile);
                 doc.getDocumentElement().normalize();
 
-                continutFisier += "Root element:" + doc.getDocumentElement().getNodeName() + ">";
+                //  <class> tag is root element
+                continutFisier += "Root element: " + doc.getDocumentElement().getNodeName();
 
 
                 NodeList list = doc.getElementsByTagName("student");

@@ -1,18 +1,14 @@
 package com.company;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.w3c.dom.Document;
@@ -24,8 +20,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.PrintWriter;
-import java.lang.management.BufferPoolMXBean;
-import java.util.Scanner;
 
 public class Fx extends Application {
     Button button;
@@ -64,7 +58,6 @@ public class Fx extends Application {
         grid.add(hbtn,1,4);
         grid.setGridLinesVisible(false);
 
-
         scene = new Scene(grid, 300, 275);
 
         primaryStage.setTitle("Manipulating XML");
@@ -72,10 +65,7 @@ public class Fx extends Application {
         primaryStage.show();
 
 
-
-
         button.setOnAction(event -> {
-
 
                     try {
                         PrintWriter fisier = new PrintWriter(filename.getText());
@@ -99,7 +89,7 @@ public class Fx extends Application {
                             //checking if type is element
                             if (node.getNodeType() == Node.ELEMENT_NODE) {
                                 Element child = (Element) node;
-                                continutFisier += " - Student roll no : "
+                                continutFisier += "- Student roll no :"
                                         + child.getAttribute("rollno") + "\n";
 
                                 continutFisier += "FirstName: "

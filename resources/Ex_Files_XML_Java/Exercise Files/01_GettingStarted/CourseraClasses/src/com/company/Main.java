@@ -5,14 +5,19 @@ public class Main {
 
     public static void main(String[] args) {
 
+        staticcs unu = new staticcs();
+        staticcs doi = new staticcs();
+        staticcs trei = new staticcs();
 
-        System.out.println(lastDigit(233));
-        String x = "abra().cadabra";
-        String y = com.company.caesarphy.normalizeText(x);
-        String encrypt = com.company.caesarphy.chiper(y);
-        System.out.println(encrypt);
 
-        System.out.println(fact(5));
+
+//        System.out.println(lastDigit(233));
+//        String x = "abra().cadabra";
+//        String y = com.company.caesarphy.normalizeText(x);
+//        String encrypt = com.company.caesarphy.chiper(y);
+//        System.out.println(encrypt);
+//
+//        System.out.println(fact(5));
 
 
     }

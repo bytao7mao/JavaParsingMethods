@@ -17,14 +17,17 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SAXCustomerHandler extends DefaultHandler{
+public class SAXCustomerHandler extends DefaultHandler {
     private List<Customer> data;
     private Customer customer;
     private String currentElement = "";
     private StringBuilder currentText;
     private static final String XMLDATEFORMAT = "yyyy-MM-dd'T'HH:mm:ss";
 
-    public List<Customer> readDataFromXML(String filename) throws IOException, SAXException, ParserConfigurationException {
+    public List<Customer> readDataFromXML(String filename) throws
+            IOException,
+            SAXException,
+            ParserConfigurationException {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         parser.parse(new File(filename), this);
@@ -44,8 +47,12 @@ public class SAXCustomerHandler extends DefaultHandler{
     }
 
     @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        //System.out.println("Start element: " + qName);
+    public void startElement(String uri,
+                             String localName,
+                             String qName,
+                             Attributes attributes)
+            throws SAXException {
+        System.out.println("Start element: " + qName);
         currentElement = qName;
 
         switch (currentElement){
@@ -65,9 +72,13 @@ public class SAXCustomerHandler extends DefaultHandler{
     }
 
     @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
+    public void endElement(String uri,
+                           String localName,
+                           String qName)
+            throws SAXException {
         //System.out.println("End element: " + qName);
-        if (currentElement.equals("customers") || currentElement.equals("customer")){
+        if (currentElement.equals("customers")
+                || currentElement.equals("customer")) {
             return;
         }
         String content = currentText.toString();

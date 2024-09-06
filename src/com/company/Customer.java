@@ -26,6 +26,29 @@ public class Customer {
 
     public Customer(){ }
 
+    public Customer(int id){
+        this.id = id;
+    }
+
+    public Customer(int id, int age){
+        this(id);
+        this.age=age;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", about='" + about + '\'' +
+                ", age=" + age +
+                ", balance=" + balance +
+                ", active=" + active +
+                ", joined=" + joined +
+                '}';
+    }
+
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public void setId(Number id){this.id = id.intValue();}
@@ -34,7 +57,7 @@ public class Customer {
     public void setName(String name) { this.name = name; }
 
     public String getPhone() { return phone; }
-    public void setPhone(String phone) { this.phone = phone; }
+    public void setPhone(String phone) {this.phone = phone; }
 
     public String getAbout() { return about; }
     public void setAbout(String about) { this.about = about; }
@@ -60,12 +83,11 @@ public class Customer {
     public Date getJoined() { return joined; }
     public void setJoined(Date joined) { this.joined = joined; }
 
-
-    @Override
-    public String toString() {
-        DateFormat df = DateFormat.getDateInstance(DateFormat.LONG);
-        return this.id + ". " + this.name + " joined " + df.format(this.joined);
-
-    }
+//    @Override
+//    public String toString() {
+//        DateFormat df = DateFormat.getDateInstance(DateFormat.LONG);
+//        return this.id + ". " + this.name + " joined " + df.format(this.joined);
+//
+//    }
 }
 

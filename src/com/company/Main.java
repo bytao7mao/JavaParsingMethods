@@ -20,11 +20,13 @@ public class Main {
     public static final int LARGE = 50000;
 
     public static void main(String[] args) {
+        Customer x = new Customer(3, 24);
+        System.out.println(x.toString());
         Stopwatch watch = new Stopwatch().start("Getting data from JSON");
         List<Customer> data = getData(SMALL);
         System.out.println("Returned: " + data.size());
         for (int i=0; i < Math.min(data.size(), 10);i++){
-            System.out.println((Customer)data.get(i));
+            System.out.println(data.get(i));
         }
         watch.stop();
     }
@@ -38,7 +40,7 @@ public class Main {
             filename = DATADIR + "customers.json";
         }
 
-        //		Parse JSON file and get the data
+        //	Parse JSON file and get the data
         JSONArray inputData = null;
         JSONParser parser = new JSONParser();
         try {

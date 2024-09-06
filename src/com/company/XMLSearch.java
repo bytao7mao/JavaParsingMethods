@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 
 
-public class XMLSearch {
+public class XMLSearch extends Exception {
     public static void main(String[] args) throws Exception {
         String filename =  Main.DATADIR + "customers.xml";
         StringBuilder builder = new StringBuilder();

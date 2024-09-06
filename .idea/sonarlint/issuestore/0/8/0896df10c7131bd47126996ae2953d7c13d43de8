@@ -1,0 +1,13 @@
+
+?squid:S1148L"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+3squid:S16434"Use a StringBuilder instead.(ôßâƒ
+esquid:S2095"IUse try-with-resources or close this "PrintWriter" in a "finally" clause.(ŞúÈ¾ùÿÿÿÿ
+8squid:S1643/"Use a StringBuilder instead.(¸¤÷÷ùÿÿÿÿ
+3squid:S1643;"Use a StringBuilder instead.(ŒÍ‹ü
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.( õì†
+]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(ôˆ³øÿÿÿÿ
+asquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(æŞ‚I
+3squid:S1643?"Use a StringBuilder instead.(İ‘¸¿
+3squid:S16437"Use a StringBuilder instead.(±¾Ÿ·
+8squid:S1643C"Use a StringBuilder instead.(œÄÕÿûÿÿÿÿ
