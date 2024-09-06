@@ -40,35 +40,11 @@ public class DOMparser {
                 PrintWriter fisier = new PrintWriter(numeFisier);
                 String continutFisier = "";
 
-                //get the path to cust.xml
-                String replace = String.format("\"");
-                String tempFileString = String.valueOf(new File(System.getProperty("user.dir") +"\\"+ "cust.xml"));
-                String y = new File("cust.xml").getAbsolutePath().replace("\\", "\\\\\\");
-//                String x = new File("cust.xml").getCanonicalPath().replaceAll(replace, File.separator);
-//                System.out.println(tempFileString);
-//                System.out.println(x);
-//                System.out.println(tempFileString);
-//                DOMparser.class.getResource...()
-//                String tempFileString = new File("cust.xml").getAbsolutePath();
-
-//                InputStream in = Main.class.getClassLoader().getResourceAsStream("cust.xml");
-
-                URL u = DOMparser.class.getResource("/cust.xml");
-                System.out.println(u.toString());
-                File xmlFile = new File(u.toString());
-
-
-
-
-
                 DocumentBuilder builder =
                         DocumentBuilderFactory.newInstance().newDocumentBuilder();
-//            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-//            factory.setIgnoringComments(true);
-//            factory.setIgnoringElementContentWhitespace(true);
-//            factory.setValidating(true);
-//            DocumentBuilder builder = factory.newDocumentBuilder();
-                Document doc = builder.parse(xmlFile);
+
+                Document doc = builder.parse(DOMparser.class.getResourceAsStream("/cust.xml"));
+                System.out.println();
                 doc.getDocumentElement().normalize();
 
                 //  <class> tag is root element
