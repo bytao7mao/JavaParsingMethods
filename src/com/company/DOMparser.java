@@ -1,16 +1,30 @@
 package com.company;
 
-import java.io.File;
-import java.io.PrintWriter;
+import java.io.*;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
+
+import com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 public class DOMparser {
+
+
+
     public static void main(String[] args) {
+//        Path p = Paths.get("cust.xml");
+//        Path folder = p.getParent();
+//        System.out.println(p.getParent());
+//        String file = new File("C:\\Users\\tao\\Desktop\\JAVA\\ManipulateXML\\data\\cust.xml").getParent();
+//        System.out.println(file);
+//        System.out.println("File path: " + new File("cust.xml").getAbsolutePath());
         Scanner sc = new Scanner(System.in);
 
             try {
@@ -26,7 +40,26 @@ public class DOMparser {
                 PrintWriter fisier = new PrintWriter(numeFisier);
                 String continutFisier = "";
 
-                File xmlFile = new File("C:\\Users\\tao\\Desktop\\JAVA\\ManipulateXML\\data\\cust.xml");
+                //get the path to cust.xml
+                String replace = String.format("\"");
+                String tempFileString = String.valueOf(new File(System.getProperty("user.dir") +"\\"+ "cust.xml"));
+                String y = new File("cust.xml").getAbsolutePath().replace("\\", "\\\\\\");
+//                String x = new File("cust.xml").getCanonicalPath().replaceAll(replace, File.separator);
+//                System.out.println(tempFileString);
+//                System.out.println(x);
+//                System.out.println(tempFileString);
+//                DOMparser.class.getResource...()
+//                String tempFileString = new File("cust.xml").getAbsolutePath();
+
+//                InputStream in = Main.class.getClassLoader().getResourceAsStream("cust.xml");
+
+                URL u = DOMparser.class.getResource("/cust.xml");
+                System.out.println(u.toString());
+                File xmlFile = new File(u.toString());
+
+
+
+
 
                 DocumentBuilder builder =
                         DocumentBuilderFactory.newInstance().newDocumentBuilder();

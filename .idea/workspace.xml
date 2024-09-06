@@ -3,23 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="43ec1576-5570-48f7-aa3b-1efd6309a1fa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cust.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/cust.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisierRandom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fisierRandom.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/DOMparser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/DOMparser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/Fx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/Fx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/SAXCustomerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/SAXCustomerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/XMLSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManipulateXML/com/company/XMLSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/CourseraClasses/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/CourseraClasses/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/CourseraClasses/out/production/CourseraClasses/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/CourseraClasses/out/production/CourseraClasses/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/CourseraClasses/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/CourseraClasses/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/DataProvider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Ex_Files_XML_Java/Exercise Files/01_GettingStarted/DataProvider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DOMparser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DOMparser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Fx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SAXCustomerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SAXCustomerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/XMLSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/XMLSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,13 +155,17 @@
       <pane id="AndroidView" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/tao/Desktop/JAVA/ManipulateXML"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DOMparser">
+  <component name="RunManager" selected="Application.Fx">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -441,11 +431,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fx" />
         <item itemvalue="Application.DOMparser" />
         <item itemvalue="Application.XMLSearch" />
         <item itemvalue="Application.SAXread" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Fx" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +462,7 @@
       <workItem from="1565257231115" duration="2224000" />
       <workItem from="1565269536060" duration="8000" />
       <workItem from="1582150720161" duration="8256000" />
-      <workItem from="1725610494918" duration="383000" />
+      <workItem from="1725610494918" duration="8825000" />
     </task>
     <servers />
   </component>
